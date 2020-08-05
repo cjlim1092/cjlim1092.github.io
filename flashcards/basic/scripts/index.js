@@ -9,18 +9,17 @@ let myFlashcards = [
     },
   {
       question: "What is 3+3",
-      answer: 4
+      answer: 6
   }
 ];
-fuction getQuestion(i){
+
       for (let i =0; i < myFlashcards.length; i++) {
       console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
-      document.getElementById('questionbutton').onclick = getQuestion() {
+      document.getElementById('questionbutton').onclick = getQuestion() 
+      {
         alert(myFlashcards[i].question);}
-}
-function getAnswer(i){
-      for (let i=0; i ,myFlashcards.length; i++){
-     console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
-      document.getElementById('answerbutton').onclick = getAnswer() {
+
+      document.getElementById('answerbutton').onclick = getAnswer() 
+      {
         alert(myFlashcards[i].answer);}
       }
