@@ -15,9 +15,9 @@ let myFlashcards = [
   for (let i =0; i < myFlashcards.length; i++) {
       console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
       
-      document.querySelector('html').onclick = function() {
+     document.getElementById('questionbutton').onclick = function() {
         alert(myFlashcards[i].question);}
-      document.querySelector('html').onclick = function() {
+      document.querySelector('answerbutton').onclick = function() {
         alert(myFlashcards[i].answer);}
     }
 }
