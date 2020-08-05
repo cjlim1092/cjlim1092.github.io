@@ -10,16 +10,15 @@ let myFlashcards = [
   {
       question: "What is 3+3",
       answer: 4
-      }
-  
-  for (let i =0; i < myFlashcards.length; i++) {
+  }
+];
+fuction getQuestion(i){
+      for (let i =0; i < myFlashcards.length; i++) {
       console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
+
+}
       
-     document.getElementById('questionbutton').onclick = function() {
+     document.getElementById('questionbutton').onclick = getQuestion() {
         alert(myFlashcards[i].question);}
       document.querySelector('answerbutton').onclick = function() {
         alert(myFlashcards[i].answer);}
-    }
-}
-
-];
