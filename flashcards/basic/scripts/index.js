@@ -15,10 +15,12 @@ let myFlashcards = [
 fuction getQuestion(i){
       for (let i =0; i < myFlashcards.length; i++) {
       console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
-
-}
-      
-     document.getElementById('questionbutton').onclick = getQuestion() {
+      document.getElementById('questionbutton').onclick = getQuestion() {
         alert(myFlashcards[i].question);}
-      document.querySelector('answerbutton').onclick = function() {
+}
+function getAnswer(i){
+      for (let i=0; i ,myFlashcards.length; i++){
+     console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
+      document.getElementById('answerbutton').onclick = getAnswer() {
         alert(myFlashcards[i].answer);}
+      }
