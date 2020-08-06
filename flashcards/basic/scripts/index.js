@@ -17,16 +17,16 @@ let myFlashcards = [
 var i= 0; 
 
 //get question
-function getQuestion(i) {
+function getQuestion() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
 }
 //get answer
-function getAnswer(i) {
+function getAnswer() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
 }
 
 //loop to get next question
-function getNext(i) {
+function getNext() {
   //wipe display
 
   //iterate to next card
