@@ -26,7 +26,7 @@ function getAnswer() {
 //loop to get next question
 function nextButton() {
   //wipe display
-  document.getElementById("displayHere").innerHTML = "Click question for next question";
+
   //iterate to next card
   do {
     i ++;
