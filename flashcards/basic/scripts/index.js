@@ -25,7 +25,7 @@ function getAnswer() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
 }
 //loop to get next question
-function nextButton(i) {
+function getNext() {
   //wipe display
 
   //iterate to next card
