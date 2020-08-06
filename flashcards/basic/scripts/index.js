@@ -1,3 +1,4 @@
+//flashcards array
 let myFlashcards = [
   {
     question: "What is 1+1",
@@ -12,14 +13,11 @@ let myFlashcards = [
       answer: 6
   }
 ];
+//declare variables
+//get question
+function getQuestion(){
+  document.getElementById("displayHere").innerHTML = "TEST";
+}
+//get answer
 
-      for (let i =0; i < myFlashcards.length; i++) {
-      console.log(myFlashcards[i].question + ' ' + myFlashcards[i].answer);
-      document.getElementById('questionbutton').onclick = getQuestion() 
-      {
-        alert(myFlashcards[i].question);}
-
-      document.getElementById('answerbutton').onclick = getAnswer() 
-      {
-        alert(myFlashcards[i].answer);}
-      }
+//loop to get next question
