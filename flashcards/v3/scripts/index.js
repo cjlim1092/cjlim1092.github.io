@@ -1,3 +1,7 @@
+//One that changes when the user hovers over the question and answer. 
+//Do not let the the user see the answer before they hover on the question. 
+//Print a message telling them that they need to hover over the question first.
+
 //flashcards array
 let myFlashcards = [
   {
