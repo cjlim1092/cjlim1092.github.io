@@ -28,6 +28,10 @@ function getAnswer() {
 function nextButton(i) {
   //wipe display
 
-  //iterate to next carda
+  //iterate to next card
+  do{
+    i++;
+    document.getElementById("displayHere").innerHTML = "  ";
+  }
   while (i < myFlashcards.length);
 }
