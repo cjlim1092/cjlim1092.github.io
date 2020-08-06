@@ -28,12 +28,13 @@ function getAnswer() {
 //loop to get next question
 function getNext() {
   //wipe display
-
+  document.getElementById("displayHere").innerHTML = "  ";
   //iterate to next card
-  do{
-   var i = i++;
-    console.log(i);
-    document.getElementById("displayHere").innerHTML = "  ";
+  if (i===myFlashcards.length){
+    i = 0; 
   }
-  while (i < myFlashcards.length);
+  else{
+    i += 1;
+  }
+ console.log (i);
 }
