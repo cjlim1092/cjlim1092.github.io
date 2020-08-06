@@ -24,10 +24,11 @@ var q = 0; //counter to make sure loop in answer click works
 function getQuestion() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
   q += 1;
+  console.log (q);
 }
 //get answer
 function getAnswer() {
-  if (q >=i){
+  if (q > i){
   document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;}
   else{
   document.getElementById("displayHere").innerHTML = "Please click on the question first";
