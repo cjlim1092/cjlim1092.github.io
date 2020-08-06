@@ -1,3 +1,6 @@
+//One that changes when the user clicks over the question and answer. 
+//Do not let the the user see the answer before they click on the question. 
+//Print a message telling them that they need to click on the question first. 
 //flashcards array
 let myFlashcards = [
   {
@@ -15,14 +18,20 @@ let myFlashcards = [
 ];
 //declare variables
 var i= 0; 
+var q = 0; //counter to make sure loop in answer click works
 
 //get question
 function getQuestion() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
+  q += 1;
 }
 //get answer
 function getAnswer() {
-  document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
+  if (q >=i){
+  document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;}
+  else{
+  document.getElementById("displayHere").innerHTML = "Please click on the question first";
+  }
 }
 
 //loop to get next question
