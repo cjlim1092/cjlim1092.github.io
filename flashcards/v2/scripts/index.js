@@ -42,6 +42,7 @@ function getNext() {
   //iterate to next card
   if (i===myFlashcards.length){
     i = 0; 
+    q = 0;
   }
   else{
     i += 1;
