@@ -14,15 +14,19 @@ let myFlashcards = [
   }
 ];
 //declare variables
+var i= 0; 
 //get question
 function getQuestion() {
-  document.getElementById("displayHere").innerHTML = myFlashcards[0].question;
+  document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
 }
 //get answer
 function getAnswer() {
-  document.getElementById("displayHere").innerHTML = myFlashcards[0].answer;
+  document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
 }
 //loop to get next question
 function nextButton() {
-  document.getElementById("displayHere").innerHTML = "ITERATEMEOK";
+  //wipe display
+  document.getElementById("displayHere").innerHTML = " ";
+  //iterate to next card
+  
 }
