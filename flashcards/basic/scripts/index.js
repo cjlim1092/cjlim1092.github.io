@@ -17,20 +17,20 @@ let myFlashcards = [
 var i= 0; 
 
 //get question
-function getQuestion() {
+function getQuestion(i) {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
 }
 //get answer
-function getAnswer() {
+function getAnswer(i) {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
 }
 //loop to get next question
-function getNext() {
+function getNext(i) {
   //wipe display
 
   //iterate to next card
   do{
-    i++;
+    i = i++;
     document.getElementById("displayHere").innerHTML = "  ";
   }
   while (i < myFlashcards.length);
