@@ -15,6 +15,7 @@ let myFlashcards = [
 ];
 //declare variables
 var i= 0; 
+
 //get question
 function getQuestion() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
@@ -24,12 +25,9 @@ function getAnswer() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
 }
 //loop to get next question
-function nextButton() {
+function nextButton(i) {
   //wipe display
 
-  //iterate to next card
-  do {
-    i ++;
-  }
+  //iterate to next carda
   while (i < myFlashcards.length);
 }
