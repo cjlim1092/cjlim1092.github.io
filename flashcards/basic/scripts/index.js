@@ -31,7 +31,7 @@ function getNext() {
 
   //iterate to next card
   do{
-    i = i++;
+   var i = i++;
     console.log(i);
     document.getElementById("displayHere").innerHTML = "  ";
   }
