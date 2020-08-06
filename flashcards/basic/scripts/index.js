@@ -15,9 +15,14 @@ let myFlashcards = [
 ];
 //declare variables
 //get question
-function getQuestion(){
+function getQuestion() {
   document.getElementById("displayHere").innerHTML = "TEST";
 }
 //get answer
-
+function getAnswer() {
+  document.getElementById("displayHere").innerHTML = "OK";
+}
 //loop to get next question
+function nextButton() {
+  document.getElementById("displayHere").innerHTML = "ITERATEMEOK";
+}
