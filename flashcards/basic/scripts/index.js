@@ -24,6 +24,7 @@ function getQuestion(i) {
 function getAnswer(i) {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
 }
+
 //loop to get next question
 function getNext(i) {
   //wipe display
@@ -31,6 +32,7 @@ function getNext(i) {
   //iterate to next card
   do{
     i = i++;
+    console.log(i);
     document.getElementById("displayHere").innerHTML = "  ";
   }
   while (i < myFlashcards.length);
