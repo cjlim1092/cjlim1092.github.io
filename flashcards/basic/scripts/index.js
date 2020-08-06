@@ -16,11 +16,11 @@ let myFlashcards = [
 //declare variables
 //get question
 function getQuestion() {
-  document.getElementById("displayHere").innerHTML = "TEST";
+  document.getElementById("displayHere").innerHTML = myFlashcards[0].question;
 }
 //get answer
 function getAnswer() {
-  document.getElementById("displayHere").innerHTML = "OK";
+  document.getElementById("displayHere").innerHTML = myFlashcards[0].answer;
 }
 //loop to get next question
 function nextButton() {
