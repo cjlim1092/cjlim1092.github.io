@@ -30,9 +30,8 @@ function getQuestion() {
 //default question
 function defaultText()
         {
-            var display = document.getElementById('displayHere');
-            display.innerHTML = "";
-            display.innerHTML = "Flashcard";
+            document.getElementById("displayHere").innerHTML = "Flashcard";
+          console.log(display);
         }
           
 //get answer
@@ -44,13 +43,11 @@ function getAnswer() {
   }
 }
 //default answer
-function defaultAnswerText()
+/* function defaultAnswerText()
         {
-            var display = document.getElementById('displayAnswerHere');
-            display.innerHTML = "";
-            display.innerHTML = "Flashcard Answer";
+            document.getElementById("displayAnswerHere").innerHTML = "Flashcard Answer";
         }
-          
+          */
 //loop to get next question
 function getNext() {
   //wipe display
