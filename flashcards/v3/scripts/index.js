@@ -23,10 +23,10 @@ var q = 0; //counter to make sure loop in answer click works
 
 //get question
 function getQuestion() {
-  console.log('i is ' i)
+  console.log('i is '+ i)
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
   q += 1;
-  console.log('q is ' q);
+  console.log('q is '+ q);
 }
 //default question
 function defaultText()
@@ -61,5 +61,5 @@ function getNext() {
   else{
     i += 1;
   }
- console.log ('i is now 'i);
+ console.log ('i is now '+ i);
 }
