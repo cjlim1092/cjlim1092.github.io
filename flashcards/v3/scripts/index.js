@@ -20,8 +20,7 @@ let myFlashcards = [
 //declare variables
 var i= 0; 
 var q = 0; //counter to make sure loop in answer click works
-console.log ('D i is now '+ i);
-console.log('D q is '+ q);
+
 
 //get question
 
@@ -39,8 +38,6 @@ function defaultText()
           
 //get answer
 function getAnswer() {
- console.log ('A i is now '+ i);
- console.log('A q is '+ q);
   if (q > i){
   document.getElementById("displayAnswerHere").innerHTML = myFlashcards[i].answer;}
   else{
@@ -55,8 +52,6 @@ function defaultAnswerText()
           
 //loop to get next question
 function getNext() {
-  //wipe display
-  document.getElementById("displayHere").innerHTML = "  ";
   //iterate to next card
   if (i===myFlashcards.length){
     i = 0; 
