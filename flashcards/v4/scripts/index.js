@@ -21,12 +21,21 @@ let myFlashcards = [
 var i= 0; 
 var q = 0; //counter to make sure loop in answer click works
 
+
 //get question
+
 function getQuestion() {
+  console.log('Q i is '+ i)
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
   q += 1;
-  console.log(q);
+  console.log('Q q is '+ q);
 }
+//default question
+function defaultText()
+        {
+          document.getElementById("displayHere").innerHTML = "Flashcard";
+        }
+          
 //get answer
 function getAnswer() {
   if (q > i){
@@ -35,11 +44,14 @@ function getAnswer() {
   document.getElementById("displayAnswerHere").innerHTML = "Please look at the question first";
   }
 }
-
+//default answer
+function defaultAnswerText()
+        {
+            document.getElementById("displayAnswerHere").innerHTML = "Flashcard Answer";
+        }
+          
 //loop to get next question
 function getNext() {
-  //wipe display
-  document.getElementById("displayHere").innerHTML = "  ";
   //iterate to next card
   if (i===myFlashcards.length){
     i = 0; 
@@ -48,5 +60,6 @@ function getNext() {
   else{
     i += 1;
   }
- console.log (i);
+ console.log ('end i is now '+ i);
+ console.log('end q is '+ q);
 }
