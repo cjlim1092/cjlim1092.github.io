@@ -23,6 +23,7 @@ var q = 0; //counter to make sure loop in answer click works
 
 //get question
 function getQuestion() {
+  console.log(i)
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
   q += 1;
   console.log(q);
@@ -30,8 +31,8 @@ function getQuestion() {
 //default question
 function defaultText()
         {
-            document.getElementById("displayHere").innerHTML = "Flashcard";
-          console.log(display);
+          document.getElementById("displayHere").innerHTML = "Flashcard";
+          console.log(defaultText());
         }
           
 //get answer
@@ -43,11 +44,11 @@ function getAnswer() {
   }
 }
 //default answer
-/* function defaultAnswerText()
+function defaultAnswerText()
         {
             document.getElementById("displayAnswerHere").innerHTML = "Flashcard Answer";
         }
-          */
+          
 //loop to get next question
 function getNext() {
   //wipe display
