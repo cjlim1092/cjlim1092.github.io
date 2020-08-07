@@ -1,3 +1,7 @@
+//One that displays a question and a corresponding image when the user hovers over the question.
+//Do not let the the user see the answer before they hover on the question. 
+//Print a message telling them that they need to hover over the question first.
+
 //flashcards array
 let myFlashcards = [
   {
@@ -15,14 +19,20 @@ let myFlashcards = [
 ];
 //declare variables
 var i= 0; 
+var q = 0; //counter to make sure loop in answer click works
 
 //get question
 function getQuestion() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
+  q += 1;
 }
 //get answer
 function getAnswer() {
-  document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
+  if (q > i){
+  document.getElementById("displayAnswerHere").innerHTML = myFlashcards[i].answer;}
+  else{
+  document.getElementById("displayAnswerHere").innerHTML = "Please look at the question first";
+  }
 }
 
 //loop to get next question
@@ -32,6 +42,7 @@ function getNext() {
   //iterate to next card
   if (i===myFlashcards.length){
     i = 0; 
+    q = 0;
   }
   else{
     i += 1;
