@@ -26,7 +26,7 @@ function getQuestion() {
 }
 //get answer
 function getAnswer() {
-  document.getElementById("displayHere").innerHTML = myFlashcards[i].answer;
+  document.getElementById("displayAnswerHere").innerHTML = myFlashcards[i].answer;
 }
 
 //loop to get next question
