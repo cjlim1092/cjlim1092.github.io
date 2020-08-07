@@ -20,16 +20,16 @@ let myFlashcards = [
 //declare variables
 var i= 0; 
 var q = 0; //counter to make sure loop in answer click works
-console.log ('i is now '+ i);
-console.log('q is '+ q);
+console.log ('D i is now '+ i);
+console.log('D q is '+ q);
 
 //get question
 
 function getQuestion() {
-  console.log('i is '+ i)
+  console.log('Q i is '+ i)
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
   q += 1;
-  console.log('q is '+ q);
+  console.log('Q q is '+ q);
 }
 //default question
 function defaultText()
@@ -39,6 +39,8 @@ function defaultText()
           
 //get answer
 function getAnswer() {
+ console.log ('A i is now '+ i);
+ console.log('A q is '+ q);
   if (q > i){
   document.getElementById("displayAnswerHere").innerHTML = myFlashcards[i].answer;}
   else{
@@ -63,6 +65,6 @@ function getNext() {
   else{
     i += 1;
   }
- console.log ('i is now '+ i);
- console.log('q is '+ q);
+ console.log ('end i is now '+ i);
+ console.log('end q is '+ q);
 }
