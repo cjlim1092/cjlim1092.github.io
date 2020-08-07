@@ -4,3 +4,8 @@
   padding: 50px;
   border: 1px solid blue;
 }
+
+
+img:hover
+{
+    background-color: #FFFF66;
