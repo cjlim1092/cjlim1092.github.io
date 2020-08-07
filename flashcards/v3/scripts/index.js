@@ -27,6 +27,14 @@ function getQuestion() {
   q += 1;
   console.log(q);
 }
+//default question
+function defaultText()
+        {
+            var display = document.getElementById('displayHere');
+            display.innerHTML = "";
+            display.innerHTML = "Flashcard";
+        }
+          
 //get answer
 function getAnswer() {
   if (q > i){
@@ -35,7 +43,14 @@ function getAnswer() {
   document.getElementById("displayAnswerHere").innerHTML = "Please look at the question first";
   }
 }
-
+//default answer
+function defaultAnswerText()
+        {
+            var display = document.getElementById('displayAnswerHere');
+            display.innerHTML = "";
+            display.innerHTML = "Flashcard Answer";
+        }
+          
 //loop to get next question
 function getNext() {
   //wipe display
