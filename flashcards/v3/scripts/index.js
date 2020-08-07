@@ -19,6 +19,7 @@ let myFlashcards = [
 ];
 //declare variables
 var i= 0; 
+var q = 0; //counter to make sure loop in answer click works
 
 //get question
 function getQuestion() {
@@ -26,7 +27,11 @@ function getQuestion() {
 }
 //get answer
 function getAnswer() {
-  document.getElementById("displayAnswerHere").innerHTML = myFlashcards[i].answer;
+  if (q > i){
+  document.getElementById("displayAnswerHere").innerHTML = myFlashcards[i].answer;}
+  else{
+  document.getElementById("displayAnswerHere").innerHTML = "Please look at the question first";
+  }
 }
 
 //loop to get next question
@@ -36,6 +41,7 @@ function getNext() {
   //iterate to next card
   if (i===myFlashcards.length){
     i = 0; 
+    q = 0;
   }
   else{
     i += 1;
