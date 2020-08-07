@@ -25,6 +25,7 @@ var q = 0; //counter to make sure loop in answer click works
 function getQuestion() {
   document.getElementById("displayHere").innerHTML = myFlashcards[i].question;
   q += 1;
+  console.log(q);
 }
 //get answer
 function getAnswer() {
