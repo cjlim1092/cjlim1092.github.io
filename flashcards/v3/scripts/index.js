@@ -30,11 +30,11 @@ function getQuestion() {
   q += 1;
   console.log('Q q is '+ q);
 }
-//default question
+/*default question
 function defaultText()
         {
           document.getElementById("displayHere").innerHTML = "Flashcard";
-        }
+        } */
           
 //get answer
 function getAnswer() {
@@ -44,11 +44,11 @@ function getAnswer() {
   document.getElementById("displayAnswerHere").innerHTML = "Please look at the question first";
   }
 }
-//default answer
+/*default answer
 function defaultAnswerText()
         {
             document.getElementById("displayAnswerHere").innerHTML = "Flashcard Answer";
-        }
+        } */
           
 //loop to get next question
 function getNext() {
